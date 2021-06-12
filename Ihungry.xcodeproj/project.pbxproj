@@ -13,6 +13,10 @@
 		6C83AE882671496B0071E962 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C83AE862671496B0071E962 /* Main.storyboard */; };
 		6C83AE8A267149700071E962 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C83AE89267149700071E962 /* Assets.xcassets */; };
 		6C83AE8D267149700071E962 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C83AE8B267149700071E962 /* LaunchScreen.storyboard */; };
+		6C83AE98267490680071E962 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C83AE97267490680071E962 /* Question.swift */; };
+		6C83AE9B267495140071E962 /* ResponseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C83AE9A267495140071E962 /* ResponseType.swift */; };
+		6C83AE9F267496BC0071E962 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C83AE9E267496BB0071E962 /* Answer.swift */; };
+		6C83AEA2267497100071E962 /* TypeOfFasting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C83AEA1267497100071E962 /* TypeOfFasting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		6C83AE89267149700071E962 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C83AE8C267149700071E962 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C83AE8E267149700071E962 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C83AE97267490680071E962 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		6C83AE9A267495140071E962 /* ResponseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseType.swift; sourceTree = "<group>"; };
+		6C83AE9E267496BB0071E962 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		6C83AEA1267497100071E962 /* TypeOfFasting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeOfFasting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,59 @@
 		6C83AE7F2671496B0071E962 /* Ihungry */ = {
 			isa = PBXGroup;
 			children = (
-				6C83AE802671496B0071E962 /* AppDelegate.swift */,
-				6C83AE822671496B0071E962 /* SceneDelegate.swift */,
-				6C83AE842671496B0071E962 /* ViewController.swift */,
-				6C83AE862671496B0071E962 /* Main.storyboard */,
-				6C83AE89267149700071E962 /* Assets.xcassets */,
-				6C83AE8B267149700071E962 /* LaunchScreen.storyboard */,
-				6C83AE8E267149700071E962 /* Info.plist */,
+				6C83AEA72674A3780071E962 /* Supporting Files */,
+				6C83AEA62674A3550071E962 /* Resources */,
+				6C83AEA52674A3350071E962 /* Storyboards */,
+				6C83AEA42674A3120071E962 /* ViewControllers */,
+				6C83AE962674902A0071E962 /* Model */,
 			);
 			path = Ihungry;
+			sourceTree = "<group>";
+		};
+		6C83AE962674902A0071E962 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6C83AE97267490680071E962 /* Question.swift */,
+				6C83AE9A267495140071E962 /* ResponseType.swift */,
+				6C83AE9E267496BB0071E962 /* Answer.swift */,
+				6C83AEA1267497100071E962 /* TypeOfFasting.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6C83AEA42674A3120071E962 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6C83AE842671496B0071E962 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6C83AEA52674A3350071E962 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				6C83AE862671496B0071E962 /* Main.storyboard */,
+				6C83AE8B267149700071E962 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		6C83AEA62674A3550071E962 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6C83AE89267149700071E962 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6C83AEA72674A3780071E962 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6C83AE802671496B0071E962 /* AppDelegate.swift */,
+				6C83AE822671496B0071E962 /* SceneDelegate.swift */,
+				6C83AE8E267149700071E962 /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +190,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C83AE852671496B0071E962 /* ViewController.swift in Sources */,
+				6C83AEA2267497100071E962 /* TypeOfFasting.swift in Sources */,
+				6C83AE98267490680071E962 /* Question.swift in Sources */,
+				6C83AE9B267495140071E962 /* ResponseType.swift in Sources */,
+				6C83AE9F267496BC0071E962 /* Answer.swift in Sources */,
 				6C83AE812671496B0071E962 /* AppDelegate.swift in Sources */,
 				6C83AE832671496B0071E962 /* SceneDelegate.swift in Sources */,
 			);
@@ -287,7 +343,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Ihungry/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Ihungry/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,7 +362,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Ihungry/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Ihungry/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
