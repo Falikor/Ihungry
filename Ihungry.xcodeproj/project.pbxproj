@@ -19,6 +19,7 @@
 		6C83AEA2267497100071E962 /* TypeOfFasting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C83AEA1267497100071E962 /* TypeOfFasting.swift */; };
 		6C83AEAE2675EF420071E962 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C83AEAD2675EF420071E962 /* InfoViewController.swift */; };
 		6C83AEB12675EF790071E962 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C83AEB02675EF790071E962 /* QuestionViewController.swift */; };
+		6C83AEB92679387D0071E962 /* YouChose.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6C83AEB82679387D0071E962 /* YouChose.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		6C83AEA1267497100071E962 /* TypeOfFasting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeOfFasting.swift; sourceTree = "<group>"; };
 		6C83AEAD2675EF420071E962 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		6C83AEB02675EF790071E962 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		6C83AEB82679387D0071E962 /* YouChose.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = YouChose.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 		6C83AE7F2671496B0071E962 /* Ihungry */ = {
 			isa = PBXGroup;
 			children = (
+				6C83AEB72679387D0071E962 /* music */,
 				6C83AEA72674A3780071E962 /* Supporting Files */,
 				6C83AEA62674A3550071E962 /* Resources */,
 				6C83AEA52674A3350071E962 /* Storyboards */,
@@ -123,6 +126,14 @@
 				6C83AE8E267149700071E962 /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6C83AEB72679387D0071E962 /* music */ = {
+			isa = PBXGroup;
+			children = (
+				6C83AEB82679387D0071E962 /* YouChose.mp3 */,
+			);
+			path = music;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C83AE8D267149700071E962 /* LaunchScreen.storyboard in Resources */,
+				6C83AEB92679387D0071E962 /* YouChose.mp3 in Resources */,
 				6C83AE8A267149700071E962 /* Assets.xcassets in Resources */,
 				6C83AE882671496B0071E962 /* Main.storyboard in Resources */,
 			);
