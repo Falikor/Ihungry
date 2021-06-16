@@ -103,6 +103,9 @@ extension QuestionViewController {
         }
     }
     private func updateMultipleStackView(answers: [Answer]) {
+        for valeu in multipleSwitches {
+            valeu.isOn = false
+        }
         multipleStackView.isHidden = false
         for (lable, answer) in zip(multipleLabels, answers) {
             lable.text = answer.text
@@ -110,6 +113,7 @@ extension QuestionViewController {
     }
     private func updateRsngedStackView(answers: [Answer]) {
         rangedStackView.isHidden = false
+        rangedSlider.value = 0.5
         rangedLabels.first?.text = answers.first?.text
         rangedLabels.last?.text = answers.last?.text
         

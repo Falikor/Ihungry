@@ -18,13 +18,13 @@ extension Question {
     static func getQuestions() -> [Question] {
         return [
             Question(
-                text: "Есть ли у Вас опыт в периодическом голодании?",
+                text: "Как вы относитесь к пище?",
                 type: .single,
                 answers: [
-                    Answer(text: "Большой опыт", type: .hour24),
-                    Answer(text: "Практикую периодический", type: .hour12),
-                    Answer(text: "Незначительный", type: .hour8),
-                    Answer(text: "Нет опыта", type: .hour6)
+                    Answer(text: "Еда это топливо и не более.", type: .hour24),
+                    Answer(text: "Могзу пропустить пару приемов пищи.", type: .hour12),
+                    Answer(text: "Не делаю культ из еды.", type: .hour8),
+                    Answer(text: "Это главное в моей жизни!", type: .hour6)
                 ]
             ),
             Question(
@@ -38,6 +38,36 @@ extension Question {
                 ]
             ),
             Question(
+                text: "Есть ли у Вас опыт в периодическом голодании?",
+                type: .single,
+                answers: [
+                    Answer(text: "Большой опыт", type: .hour24),
+                    Answer(text: "Практикую периодический", type: .hour12),
+                    Answer(text: "Незначительный", type: .hour8),
+                    Answer(text: "Нет опыта", type: .hour6)
+                ]
+            ),
+            Question(
+                text: "Как много воды Вы потребляете в день?",
+                type: .ranged,
+                answers: [
+                    Answer(text: "Мало", type: .hour6),
+                    Answer(text: "Недостаточно", type: .hour8),
+                    Answer(text: "Нормальная", type: .hour12),
+                    Answer(text: "Много", type: .hour24)
+                ]
+            ),
+            Question(
+                text: "Какой прием пищи является самым важным для вас?",
+                type: .multiple,
+                answers: [
+                    Answer(text: "Ужин", type: .hour6),
+                    Answer(text: "Обед", type: .hour8),
+                    Answer(text: "Завтрак", type: .hour12),
+                    Answer(text: "Не вижу разницы", type: .hour24)
+                ]
+            ),
+            Question(
                 text: "На сколько активную жизнь Вы видете?",
                 type: .ranged,
                 answers: [
@@ -47,6 +77,7 @@ extension Question {
                     Answer(text: "Активная", type: .hour24)
                 ]
             ),
+
         ]
     }
 }

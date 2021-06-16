@@ -11,6 +11,7 @@ class InfoViewController: UIViewController {
     @IBOutlet weak var imagFasting: UIImageView!
     @IBOutlet weak var textFasting: UITextView!
     @IBOutlet weak var questionButton: UIButton!
+    @IBOutlet weak var segmentedControlFasting: UISegmentedControl!
     
     let questions = Question.getQuestions()
     override func viewDidLoad() {
