@@ -22,7 +22,7 @@ extension Question {
                 type: .single,
                 answers: [
                     Answer(text: "Еда это топливо и не более.", type: .hour24),
-                    Answer(text: "Могзу пропустить пару приемов пищи.", type: .hour12),
+                    Answer(text: "Могу пропустить пару приемов пищи.", type: .hour12),
                     Answer(text: "Не делаю культ из еды.", type: .hour8),
                     Answer(text: "Это главное в моей жизни!", type: .hour6)
                 ]
